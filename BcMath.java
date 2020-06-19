@@ -226,11 +226,7 @@ public class BcMath {
                     right = listen[--listen_index];
                     operator = listen[--listen_index];
                     left = listen[--listen_index];
-
-//                    out(left + " " + operator + " " + right + " = ");
                     listen[listen_index++] = accuracy(call(methods[operators.indexOf(operator)], left, right), scale);
-
-//                    out(listen[listen_index - 1]);
                 }
             }
             if (bit == ')') {
